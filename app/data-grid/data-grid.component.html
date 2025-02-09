@@ -1,0 +1,17 @@
+<p>data-grid works!</p>
+<wj-flex-grid 
+#flexGrid
+[itemsSource]="collectionView" 
+[autoGenerateColumns]="false" 
+[allowSorting]="true" 
+[allowResizing]="true" 
+[isReadOnly]="true" 
+(sortingColumn)="onSortingColumn($event)" 
+(formatItem)="onFormatItem($event)"
+(initialized)="onGridInitialized($event)"
+style="height: 400px; width: 100%;">
+<wj-flex-grid-column header="ID" binding="id" [width]="80"></wj-flex-grid-column>
+<wj-flex-grid-column header="Category" binding="category" width="*"></wj-flex-grid-column>
+<wj-flex-grid-column header="Price" binding="price" [width]="100"></wj-flex-grid-column>
+<wj-flex-grid-column header="Stock" binding="stock" [width]="150"></wj-flex-grid-column>
+</wj-flex-grid>
