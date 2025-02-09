@@ -1,0 +1,30 @@
+/* Hide Wijmo's default sort icons */
+.custom-grid .wj-header .wj-glyph-down,
+.custom-grid .wj-header .wj-glyph-up {
+  display: none !important;
+}
+
+/* Style your custom sort icons */
+.custom-grid .sort-icon {
+  margin-left: 5px;
+  font-size: 12px;
+  color: #007bff; /* Change the color as needed */
+}
+
+
+/* Folder icon styling */
+.custom-grid .folder-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  /* Custom sort icon styling */
+  .custom-grid .sort-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
